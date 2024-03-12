@@ -10,7 +10,7 @@ end=$'\e[0m'
 
 file=demorepos.txt
 lines=`cat ${file}`
-workdir=$PWD
+workdir=$PWD/clonedir
 
 function prereqs(){
 
