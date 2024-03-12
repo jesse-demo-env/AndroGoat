@@ -10,17 +10,9 @@ end=$'\e[0m'
 
 file=demorepos.txt
 lines=`cat ${file}`
-workdir=$PWD/clonedir
+workdir=$PWD
 
 function prereqs(){
-
-# check for workdir and clean
-if [ -d "$workdir" ]
-then 
-    rm -rf $workdir && mkdir $workdir
-else
-    mkdir $workdir
-fi
 
 if [ -z "${GITHUB_TOKEN}" ]
 then
@@ -47,7 +39,6 @@ function setupgh(){
 
 # loop through text file
 for line in $lines; do
-    cd $workdir
     echo -e "${cyn}Cloning ${line} ${end}"
     git clone --depth 1 $line
     repo=$(basename -s .git $line)
