@@ -80,5 +80,7 @@ curl -X POST -H 'Accept: application/vnd.github.v3+json' -u $GITHUB_USER:$GITHUB
   -d '{"name":"'$repo'"}'
 echo -e "${yel}Created repo at $repourl${end}"
 
+}
+
 prereqs
 setupgh
