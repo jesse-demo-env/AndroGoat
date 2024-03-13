@@ -56,9 +56,9 @@ for line in $lines; do
         echo -e "${cyn}Deleted .github folder ${line} ${end}"
     fi
     createghrepo
-    git checkout -b main $currentbranch
     git remote set-url origin $repourl
-    git push --set-upstream origin main
+    git push -v -u origin $currentbranch
+    cd .. && rm -rf $workdir/$repo
     
 done
 
