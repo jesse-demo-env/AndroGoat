@@ -40,7 +40,7 @@ function setupgh(){
 # loop through text file
 for line in $lines; do
     echo -e "${cyn}Cloning ${line} ${end}"
-    git clone --depth 1 $line
+    git clone $line
     repo=$(basename -s .git $line)
     echo -e "${cyn}Repo will be called $repo ${end}"
     cd $workdir/$repo

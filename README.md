@@ -10,8 +10,7 @@ export GITHUB_ORG=my-github-organization
 ```
 Download and run the script
 ```shell
-git clone https://github.com/samq-ws/massreposetup.git && cd massreposetup
-chmod +x setup.sh
+git clone https://github.com/samq-ws/massreposetup.git && cd massreposetup && chmod +x setup.sh
 ./setup.sh
 ```
 
@@ -21,4 +20,8 @@ docker run --name test -i -d ubuntu:latest
 docker exec -it test bash
 
 apt update && export DEBIAN_FRONTEND=noninteractive && apt install -y git curl nano unzip zip jq
+
+git config --global credential.helper 'cache --timeout=3600'
+git config --global user.email "your-email"
+git config --global user.name "your-name"
 ```
