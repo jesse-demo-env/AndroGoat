@@ -1,1 +1,13 @@
-https://github.com/k-tamura/easybuggy.git
+https://github.com/CSPF-Founder/JavaVulnerableLab.git
+https://github.com/k-tamura/easybuggy4sb.git
+https://github.com/WebGoat/WebGoat-Legacy.git
+https://github.com/veracode/verademo.git
+https://github.com/OWASP/SecurityShepherd.git
+https://github.com/OWASP/NodeGoat.git
+https://github.com/toolness/security-adventure.git
+https://github.com/appsecco/dvna.git
+https://github.com/bkimminich/juice-shop.git
+https://github.com/dotnet-architecture/eShopOnWeb.git
+https://github.com/satishpatnayak/AndroGoat.git
+https://github.com/Checkmarx/Goatlin.git
+https://github.com/k-tamura/easybuggy4kt.git
